@@ -1,7 +1,9 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
+import defaultTheme from 'tailwindcss/defaultTheme';
+import tailwindcssForms from '@tailwindcss/forms';
 
+/** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
@@ -14,6 +16,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    tailwindcssForms,
+  ],
 }
 
