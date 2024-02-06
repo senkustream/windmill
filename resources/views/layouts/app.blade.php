@@ -13,6 +13,17 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    @yield('content')
+    <div class="flex h-screen bg-gray-50 dark:bg-gray-900">
+        @include('partials.sidebar')
+        <div class="flex flex-col flex-1 w-full">
+            @include('partials.header')
+            <main class="w-full overflow-auto">
+                <div class="container px-6 mx-auto-grid">
+                    @yield('content')
+                </div>
+            </main>
+        </div>
+    </div>
+    @yield('before-body')
 </body>
 </html>
