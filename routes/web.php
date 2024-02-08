@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CardsController;
+use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -19,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/forms', [FormsController::class, 'index']);
 Route::get('/cards', [CardsController::class, 'index']);
+Route::get('/charts', [ChartsController::class, 'index']);
