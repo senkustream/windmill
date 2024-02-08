@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ButtonsController;
 use App\Http\Controllers\CardsController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\FormsController;
@@ -21,3 +22,4 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/forms', [FormsController::class, 'index']);
 Route::get('/cards', [CardsController::class, 'index']);
 Route::get('/charts', [ChartsController::class, 'index']);
+Route::get('/buttons', [ButtonsController::class, 'index']);
