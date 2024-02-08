@@ -5,6 +5,7 @@ use App\Http\Controllers\CardsController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ModalsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,4 @@ Route::get('/forms', [FormsController::class, 'index']);
 Route::get('/cards', [CardsController::class, 'index']);
 Route::get('/charts', [ChartsController::class, 'index']);
 Route::get('/buttons', [ButtonsController::class, 'index']);
+Route::get('/modals', [ModalsController::class, 'index']);
