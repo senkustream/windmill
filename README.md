@@ -1,12 +1,12 @@
 # Windmill Blade
 [Windmill dashboard](https://github.com/estevanmaito/windmill-dashboard) in Laravel Blade with updated version of TailwindCSS and AlpineJS.
 
-This repository uses :
+This repository uses:
 - Laravel version 10.
 - TailwindCSS version 3.
 - AlpineJS version 3.
 
-This repository require:
+This repository requires:
 - NodeJS minimum version 20.
 - PHP version 8.3.
 
