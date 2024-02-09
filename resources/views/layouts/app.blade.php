@@ -11,6 +11,7 @@
     @stack('styles')
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="{{ asset('init-alpine.js') }}"></script>
+    @stack('head-scripts')
 </head>
 <body>
     <div class="flex h-screen bg-gray-50 dark:bg-gray-900">
@@ -25,6 +26,6 @@
         </div>
     </div>
     @yield('before-body')
-    @stack('scripts')
+    @stack('body-scripts')
 </body>
 </html>
