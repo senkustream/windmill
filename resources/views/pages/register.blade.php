@@ -25,22 +25,22 @@
                         </h1>
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Email</span>
-                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:ring-gray form-input" placeholder="Jane Doe" />
+                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:outline-none dark:focus:ring dark:focus:ring-gray-100 form-input" placeholder="Jane Doe" />
                         </label>
                         <label class="block mt-4 text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Password</span>
-                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:ring-gray form-input" placeholder="***************" type="password" />
+                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:outline-none dark:focus:ring dark:focus:ring-gray-100 form-input" placeholder="***************" type="password" />
                         </label>
                         <label class="block mt-4 text-sm">
                             <span class="text-gray-700 dark:text-gray-400">
                                 Confirm password
                             </span>
-                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:ring-gray form-input" placeholder="***************" type="password" />
+                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:outline-none dark:focus:ring dark:focus:ring-gray-100 form-input" placeholder="***************" type="password" />
                         </label>
 
                         <div class="flex mt-6 text-sm">
                             <label class="flex items-center dark:text-gray-400">
-                                <input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:focus:ring-gray" />
+                                <input type="checkbox" class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:focus:outline-none dark:focus:ring dark:focus:ring-gray-100" />
                                 <span class="ml-2">
                                     I agree to the
                                     <span class="underline">privacy policy</span>
