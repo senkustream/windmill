@@ -42,7 +42,7 @@ function data() {
         closeProfileMenu() {
             this.isProfileMenuOpen = false;
         },
-        isPagesMenuOpen: false,
+        isPagesMenuOpen: (['/pages/404', '/pages/blank'].includes(window.location.pathname)) ? true : false,
         togglePagesMenu() {
             this.isPagesMenuOpen = !this.isPagesMenuOpen;
         },
