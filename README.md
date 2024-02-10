@@ -1,5 +1,5 @@
 # Windmill Blade
-[Windmill dashboard](https://github.com/estevanmaito/windmill-dashboard) in Laravel Blade with updated version of TailwindCSS and AlpineJS.
+[Windmill dashboard](https://github.com/estevanmaito/windmill-dashboard) in Laravel Blade.
 
 This repository uses:
 - Laravel version 10.
