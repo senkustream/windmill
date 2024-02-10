@@ -1,13 +1,10 @@
 @extends('layouts.app')
 
-@push('styles')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
-@endpush
-
-@push('body-scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
-<script src="{{ asset('charts-lines.js') }}" defer></script>
-<script src="{{ asset('charts-pie.js') }}" defer></script>
+@push('head-scripts')
+<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+<script src="{{ asset('chart-default.js') }}" defer></script>
+<script src="{{ asset('chart-lines.js') }}" defer></script>
+<script src="{{ asset('chart-doughnut.js') }}" defer></script>
 @endpush
 
 @section('content')

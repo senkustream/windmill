@@ -13,6 +13,7 @@ const lineConfig = {
                 borderColor: '#0694a2',
                 data: [43, 48, 40, 54, 67, 73, 70],
                 fill: false,
+                tension: 0.5,
             },
             {
                 label: 'Paid',
@@ -24,25 +25,23 @@ const lineConfig = {
                 borderColor: '#7e3af2',
                 data: [24, 50, 64, 74, 52, 51, 65],
                 fill: false,
+                tension: 0.5,
             },
         ],
     },
     options: {
-        responsive: true,
         /**
          * Default legends are ugly and impossible to style.
          * See examples in charts.html to add your own legends
          *  */
-        legend: {
-            display: false,
-        },
-        tooltips: {
-            mode: 'index',
-            intersect: false,
-        },
-        hover: {
-            mode: 'nearest',
-            intersect: true,
+        plugins: {
+            legend: {
+                display: false,
+            },
+            tooltip: {
+                mode: 'index',
+                intersect: false,
+            },
         },
         scales: {
             x: {

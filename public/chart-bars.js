@@ -23,10 +23,11 @@ const barConfig = {
         ],
     },
     options: {
-        responsive: true,
-        legend: {
-            display: false,
-        },
+        plugins: {
+            legend: {
+                display: false,
+            },
+        }
     },
 }
 
