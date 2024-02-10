@@ -16,5 +16,6 @@ This repository requires:
 2. Copy `.env.example` to `.env`.
 3. Run `composer install` command in first terminal tab.
 4. Run `php artisan key:generate` command.
-5. Run `npm install` command in second terminal tab.
-6. Run `php artisan serve` command in first terminal tab.
+5. Run `php artisan serve` command.
+6. Run `npm install` command in second terminal tab.
+7. Run `npm run dev` command.
