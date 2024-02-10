@@ -25,7 +25,7 @@
                         </h1>
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Email</span>
-                            <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:outline-none dark:focus:ring dark:focus:ring-gray-100 form-input" placeholder="Jane Doe" />
+                            <input class="block rounded w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300 dark:focus:outline-none dark:focus:ring dark:focus:ring-gray-100 form-input" placeholder="janedoe@example.com" type="email" />
                         </label>
 
                         <!-- You should use a button here, as the anchor is only used for the example  -->
