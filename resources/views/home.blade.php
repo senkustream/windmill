@@ -101,40 +101,22 @@
                         $ {{ $transaction['amount'] }}
                     </td>
                     <td class="px-4 py-3 text-xs">
-                        @switch($transaction['status'])
-                            @case('Approved')
-                                @php
-                                    $textColor = "text-green-700";
-                                    $darkTextColor = "dark:text-green-100";
-                                    $backgroundColor = "bg-green-100";
-                                    $darkBackgroundColor = "dark:bg-green-700";
-                                @endphp
-                                @break
-                            @case('Pending')
-                                @php
-                                    $textColor = "text-orange-700";
-                                    $darkTextColor = "dark:text-white";
-                                    $backgroundColor = "bg-orange-100";
-                                    $darkBackgroundColor = "dark:bg-orange-600";
-                                @endphp
-                                @break
-                            @case('Denied')
-                                @php
-                                    $textColor = "text-red-700";
-                                    $darkTextColor = "dark:text-red-100";
-                                    $backgroundColor = "bg-red-100";
-                                    $darkBackgroundColor = "dark:bg-red-700";
-                                @endphp
-                                @break
-                            @default
-                                @php
-                                    $textColor = "text-gray-700";
-                                    $darkTextColor = "dark:text-gray-100";
-                                    $backgroundColor = "bg-gray-100";
-                                    $darkBackgroundColor = "dark:bg-gray-700";
-                                @endphp
-                        @endswitch
-                        <span class="px-2 py-1 font-semibold leading-tight rounded-full {{ $textColor }} {{ $darkTextColor }} {{ $backgroundColor }} {{ $darkBackgroundColor }}">
+                        @php
+                            switch($transaction['status']) {
+                                case 'Approved':
+                                    $class = "text-green-700 bg-green-100 dark:text-green-100 dark:bg-green-700";
+                                break;
+                                case 'Pending':
+                                    $class = "text-orange-700 bg-orange-100 dark:text-white dark:bg-orange-600";
+                                break;
+                                case 'Denied':
+                                    $class = "text-red-700 bg-red-100 dark:text-red-100 dark:bg-red-700";
+                                break;
+                                default:
+                                    $class = "text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700";
+                            }
+                        @endphp
+                        <span class="px-2 py-1 font-semibold leading-tight rounded-full {{ $class }}">
                             {{ $transaction['status'] }}
                         </span>
                     </td>
