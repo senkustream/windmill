@@ -1,7 +1,7 @@
 <?php
 
-if (!function_exists('load_menus')) {
-    function load_menus() {
+if (!function_exists('windmill_load_menus')) {
+    function windmill_load_menus() {
         return [
             [
                 'name' => 'Forms',
@@ -37,8 +37,8 @@ if (!function_exists('load_menus')) {
     }
 }
 
-if (!function_exists('get_transactions')) {
-    function get_transactions() {
+if (!function_exists('windmill_get_transactions')) {
+    function windmill_get_transactions() {
         return [
             [
                 'client' => [
