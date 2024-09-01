@@ -21,7 +21,7 @@
     </ul>
     <ul>
         @php
-        $menus = load_menus();
+        $menus = windmill_load_menus();
         @endphp
         @foreach ($menus as $menu)
         <li class="relative px-6 py-3">

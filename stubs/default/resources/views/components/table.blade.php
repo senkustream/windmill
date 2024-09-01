@@ -16,7 +16,7 @@
             </thead>
             <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
                 @php
-                    $transactions = get_transactions();
+                    $transactions = windmill_get_transactions();
                 @endphp
                 @foreach ($transactions as $transaction)
                 <tr class="text-gray-700 dark:text-gray-400">

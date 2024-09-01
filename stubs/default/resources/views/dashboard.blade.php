@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('head-scripts')
+@push('scripts.head')
 <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 <script src="{{ asset('chart-default.js') }}" defer></script>
 <script src="{{ asset('chart-lines.js') }}" defer></script>

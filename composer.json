@@ -1,7 +1,7 @@
 {
     "name": "senku/windmill",
-    "description": "Laravel blade component for Windmill Dashboard",
-    "keywords": ["blade component", "windmill dashboard"],
+    "description": "Template package for Windmill Dashboard build with Laravel",
+    "keywords": ["template", "blade", "laravel", "dashboard"],
     "license": "MIT",
     "require": {
         "php": "^8.2.0",
@@ -14,10 +14,7 @@
     "autoload": {
         "psr-4": {
             "Senku\\Windmill\\": "src/"
-        },
-        "files": [
-            "helper.php"
-        ]
+        }
     },
     "extra": {
         "laravel": {

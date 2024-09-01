@@ -11,7 +11,7 @@
     @stack('styles')
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="{{ asset('init-alpine.js') }}"></script>
-    @stack('head-scripts')
+    @stack('scripts.head')
 </head>
 <body>
     <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
@@ -23,7 +23,7 @@
             </main>
         </div>
     </div>
-    @yield('before-body')
-    @stack('body-scripts')
+    @yield('content.hidden')
+    @stack('scripts.body')
 </body>
 </html>

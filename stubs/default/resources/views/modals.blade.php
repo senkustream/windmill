@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('head-scripts')
+@push('scripts.head')
 <script src="{{ asset('focus-trap.js') }}" defer></script>
 @endpush
 
@@ -39,7 +39,7 @@
 </div>
 @endsection
 
-@section('before-body')
+@section('content.hidden')
 <!-- Modal backdrop. This what you want to place close to the closing body tag -->
 <div x-cloak x-show="isModalOpen" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
     <!-- Modal -->
